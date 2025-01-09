@@ -30,8 +30,8 @@ public class LambdaTestScenario {
     @BeforeClass
     @Parameters({"browserName", "browserVersion", "platformName"})
     public void setup( String browserName, String browserVersion, String platformName) throws MalformedURLException {
-        String username = "adarshadash"; //System.getenv("LT_USERNAME") == null ? "adarshadash" : System.getenv("LT_USERNAME");
-        String authkey = "lZJ6AQAB5VLZ94LfzZ8FdF8HCRugJAevfa3Oh5XImHKYLlM4RO" ;//System.getenv("LT_ACCESS_KEY") == null ? "lZJ6AQAB5VLZ94LfzZ8FdF8HCRugJAevfa3Oh5XImHKYLlM4RO" : System.getenv("LT_ACCESS_KEY");
+        String username = System.getenv("LT_USERNAME") == null ? "adarshadash" : System.getenv("LT_USERNAME");
+        String authkey = System.getenv("LT_ACCESS_KEY") == null ? "lZJ6AQAB5VLZ94LfzZ8FdF8HCRugJAevfa3Oh5XImHKYLlM4RO" : System.getenv("LT_ACCESS_KEY");
 
         /*
         Steps to run Smart UI project (https://beta-smartui.lambdatest.com/)
