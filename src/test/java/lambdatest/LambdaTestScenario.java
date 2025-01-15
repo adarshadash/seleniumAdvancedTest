@@ -84,7 +84,7 @@ public class LambdaTestScenario {
 
         // Print LambdaTest Session ID (Test ID)
         String sessionId = driver.getSessionId().toString();
-        System.out.println("LambdaTest Session ID: " + sessionId);
+        System.out.println("LambdaTest Session ID: " + sessionId + "Click on the URl to view test session -"+ "https://automation.lambdatest.com/logs/?sessionID="+sessionId);
     }
 
     @Test
